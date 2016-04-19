@@ -1,0 +1,76 @@
+/* line 2, ../../sass/user/wall.scss */
+.col {
+  width: 192px;
+  float: left;
+}
+/* line 6, ../../sass/user/wall.scss */
+.col .user {
+  overflow: hidden;
+  position: relative;
+  width: 182px;
+  margin: 10px 5px;
+  background-color: #000;
+}
+/* line 12, ../../sass/user/wall.scss */
+.col .user img {
+  width: 182px;
+  opacity: .3;
+  transition: all .4s linear;
+}
+/* line 17, ../../sass/user/wall.scss */
+.col .user .name {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 40px;
+  text-shadow: 0px 0px 3px #000;
+  text-align: right;
+  right: 0px;
+  color: #FFF;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  padding: 10px;
+  transition: opacity .5s linear;
+  overflow: hidden;
+}
+/* line 33, ../../sass/user/wall.scss */
+.col .user:hover .name {
+  opacity: 1;
+}
+/* line 36, ../../sass/user/wall.scss */
+.col .user:hover img {
+  opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 43, ../../sass/user/wall.scss */
+  .col {
+    width: 24%;
+    margin: .5%;
+  }
+  /* line 46, ../../sass/user/wall.scss */
+  .col .user {
+    width: 100%;
+  }
+  /* line 48, ../../sass/user/wall.scss */
+  .col .user img {
+    opacity: 1;
+    width: 100%;
+  }
+  /* line 52, ../../sass/user/wall.scss */
+  .col .user .name {
+    opacity: 1;
+    padding: 5px;
+    font-size: 10px;
+  }
+  /* line 57, ../../sass/user/wall.scss */
+  .col .user .name .status {
+    display: none;
+  }
+
+  /* line 63, ../../sass/user/wall.scss */
+  .col-5 {
+    height: 100000px;
+    display: none;
+  }
+}

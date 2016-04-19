@@ -1,0 +1,9 @@
+/* line 1, ../../sass/user/successSent.scss */
+.message {
+  margin: 100px auto;
+  width: 600px;
+}
+/* line 4, ../../sass/user/successSent.scss */
+.message a {
+  color: #409ac3;
+}

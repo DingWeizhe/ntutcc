@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* line 2, ../../sass/market/myMarket.scss */
+#mark {
+  width: 100%;
+  margin: 0px auto;
+}
+/* line 6, ../../sass/market/myMarket.scss */
+#mark .tag li {
+  float: left;
+  margin-left: 20px;
+  list-style: none;
+  border: 1px solid #333333;
+  border-bottom: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  margin-bottom: -1px;
+}
+/* line 15, ../../sass/market/myMarket.scss */
+#mark .tag li#selected {
+  background: url(/imgs/tiles.png);
+}
+/* line 18, ../../sass/market/myMarket.scss */
+#mark .tag li a {
+  display: block;
+  padding: 5px 30px;
+}
+/* line 23, ../../sass/market/myMarket.scss */
+#mark .tag ul {
+  border-bottom: 1px solid #333333;
+  margin-bottom: 15px;
+}
+/* line 28, ../../sass/market/myMarket.scss */
+#mark label {
+  font-weight: normal;
+  margin: 0;
+}
+/* line 32, ../../sass/market/myMarket.scss */
+#mark #remove-selected {
+  display: block;
+  margin: auto;
+  background: #EB3737;
+}
+/* line 37, ../../sass/market/myMarket.scss */
+#mark .item {
+  float: left;
+  background: white;
+  width: 230px;
+  padding: 5px;
+  margin: 0 5px 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: relative;
+  transition: box-shadow .3s linear;
+}
+/* line 47, ../../sass/market/myMarket.scss */
+#mark .item .item-inner {
+  position: relative;
+}
+/* line 50, ../../sass/market/myMarket.scss */
+#mark .item .img {
+  height: 220px;
+  overflow: hidden;
+}
+/* line 53, ../../sass/market/myMarket.scss */
+#mark .item .img img {
+  width: 100%;
+  height: 100%;
+}
+/* line 59, ../../sass/market/myMarket.scss */
+#mark .item.sold:before {
+  content: "已賣出";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  background: orange;
+  height: 20px;
+  padding: 0 5px;
+  margin-right: 5px;
+  color: white;
+}
+/* line 74, ../../sass/market/myMarket.scss */
+#mark .item.sell:before {
+  content: "販賣中";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  background: green;
+  height: 20px;
+  padding: 0 5px;
+  margin-right: 5px;
+  color: white;
+}
+/* line 89, ../../sass/market/myMarket.scss */
+#mark .item.cancel:before {
+  content: "取消";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  background: red;
+  height: 20px;
+  padding: 0 5px;
+  margin-right: 5px;
+  color: white;
+}
+/* line 103, ../../sass/market/myMarket.scss */
+#mark .item .date {
+  width: 100%;
+  top: 0;
+  background: white;
+  padding: 0 0 5px 5px;
+}
+/* line 109, ../../sass/market/myMarket.scss */
+#mark .item .title {
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+/* line 119, ../../sass/market/myMarket.scss */
+#mark .item:hover {
+  box-shadow: 0 0 5px black;
+}
+/* line 122, ../../sass/market/myMarket.scss */
+#mark .item .remove {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  outline: none;
+}
+/* line 127, ../../sass/market/myMarket.scss */
+#mark .item .remove:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 134, ../../sass/market/myMarket.scss */
+#mark .item.hit:after {
+  width: 22px;
+  height: 22px;
+  right: -11px;
+  top: -11px;
+}
+/* line 141, ../../sass/market/myMarket.scss */
+#mark:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 148, ../../sass/market/myMarket.scss */
+.leftSide {
+  float: left;
+}
+
+/* line 152, ../../sass/market/myMarket.scss */
+.rightSide {
+  float: right;
+}

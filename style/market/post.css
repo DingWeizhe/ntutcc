@@ -1,0 +1,36 @@
+/* line 2, ../../sass/market/post.scss */
+#post label {
+  color: #666;
+}
+/* line 5, ../../sass/market/post.scss */
+#post input, #post select, #post textarea {
+  width: 600px;
+}
+/* line 8, ../../sass/market/post.scss */
+#post input[type=radio] {
+  width: 16px;
+  margin-left: 10px;
+}
+/* line 12, ../../sass/market/post.scss */
+#post textarea {
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid transparent;
+  transition: linear all .3s;
+  outline: none;
+}
+/* line 19, ../../sass/market/post.scss */
+#post textarea:hover {
+  border: 1px solid #CCC;
+}
+/* line 23, ../../sass/market/post.scss */
+#post .row {
+  width: 600px;
+  margin: auto;
+}
+/* line 27, ../../sass/market/post.scss */
+#post .thumbnail {
+  width: 220px;
+  height: 220px;
+}

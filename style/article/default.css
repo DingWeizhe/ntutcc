@@ -1,0 +1,124 @@
+/* line 2, ../../sass/article/default.scss */
+.right {
+  vertical-align: top;
+  width: 260px;
+  float: left;
+  margin-left: 20px;
+}
+/* line 7, ../../sass/article/default.scss */
+.right .type {
+  margin-bottom: 20px;
+}
+/* line 9, ../../sass/article/default.scss */
+.right .type h3 {
+  border-bottom: 3px solid #333;
+  color: #333;
+  padding: 5px 0px;
+  letter-spacing: 5px;
+}
+/* line 16, ../../sass/article/default.scss */
+.right .type .item .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  color: #666;
+  transition: all .3s linear;
+}
+/* line 22, ../../sass/article/default.scss */
+.right .type .item .title:hover {
+  color: #000;
+}
+/* line 29, ../../sass/article/default.scss */
+.right #button-list a {
+  text-decoration: none;
+}
+/* line 31, ../../sass/article/default.scss */
+.right #button-list a .button {
+  margin-bottom: 30px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 120px;
+  padding: 5px 10px;
+  background-color: #AAA;
+  text-align: center;
+  color: #FFF;
+  transition: all .3s linear;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  float: left;
+}
+/* line 44, ../../sass/article/default.scss */
+.right #button-list a .button:hover {
+  background-color: #275ba9;
+}
+/* line 50, ../../sass/article/default.scss */
+.right #button-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 57, ../../sass/article/default.scss */
+.article.item {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px dotted #999;
+}
+/* line 62, ../../sass/article/default.scss */
+.article.item a {
+  text-decoration: none;
+}
+/* line 65, ../../sass/article/default.scss */
+.article.item .picture {
+  width: 200px;
+  height: 135px;
+  float: left;
+  border: 2px solid #FFF;
+  box-shadow: 0px 0px 3px #999;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg);
+  /* Firefox 4+ */
+  filter: gray;
+  /* IE 6-9 */
+  transition: all .3s linear;
+  background-position: center center;
+  background-size: 200px auto;
+}
+/* line 82, ../../sass/article/default.scss */
+.article.item .title {
+  font-size: 24px;
+  margin: 3px 0px;
+}
+/* line 86, ../../sass/article/default.scss */
+.article.item .description {
+  font-size: 14px;
+  height: 150px;
+  overflow: hidden;
+  line-height: 25px;
+  margin: 5px 10px;
+  padding-left: 10px;
+  color: #666;
+  transition: color .3s linear;
+}
+/* line 96, ../../sass/article/default.scss */
+.article.item .author {
+  font-size: 12px;
+  margin-bottom: 1em;
+}
+/* line 101, ../../sass/article/default.scss */
+.article.item:hover .description {
+  color: #333;
+}
+/* line 104, ../../sass/article/default.scss */
+.article.item:hover .picture {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}

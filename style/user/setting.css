@@ -1,0 +1,50 @@
+/* line 1, ../../sass/user/setting.scss */
+img.picture {
+  border-radius: 100px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 6, ../../sass/user/setting.scss */
+label {
+  letter-spacing: 3px;
+  color: #666;
+}
+
+/* line 10, ../../sass/user/setting.scss */
+.row {
+  width: 220px;
+  margin: 0px auto;
+}
+
+/* line 14, ../../sass/user/setting.scss */
+.center {
+  text-align: center;
+}
+
+/* line 18, ../../sass/user/setting.scss */
+.authenticate {
+  display: inline-block;
+  margin: 0px 10px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  background-color: #005d30;
+  color: #FFF;
+}
+
+/* line 28, ../../sass/user/setting.scss */
+.unauthenticate {
+  background-color: #443333;
+}
+
+/* line 31, ../../sass/user/setting.scss */
+.recrawler {
+  border-radius: 20px;
+  width: 26px;
+  height: 26px;
+  padding-left: 5px;
+  padding-top: 2px;
+  display: inline-block;
+}

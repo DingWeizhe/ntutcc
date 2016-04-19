@@ -1,0 +1,9 @@
+/* line 1, ../../sass/user/successAuthenticate.scss */
+.message {
+  margin: 100px auto;
+  width: 600px;
+}
+/* line 4, ../../sass/user/successAuthenticate.scss */
+.message a {
+  color: #409ac3;
+}

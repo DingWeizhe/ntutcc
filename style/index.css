@@ -1,0 +1,277 @@
+/* slide */
+/* line 3, ../sass/index.scss */
+#article-slide {
+  max-width: 960px;
+  height: 320px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #797979;
+  position: relative;
+}
+/* line 10, ../sass/index.scss */
+#article-slide .slide.mask {
+  width: 100%;
+  height: 320px;
+}
+/* line 14, ../sass/index.scss */
+#article-slide .slide.mask .list .item {
+  width: 960px;
+  height: 320px;
+}
+/* line 17, ../sass/index.scss */
+#article-slide .slide.mask .list .item .content {
+  top: 180px;
+  height: 140px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+/* line 22, ../sass/index.scss */
+#article-slide .slide.mask .list .item .content .title {
+  font-weight: bolder;
+}
+/* line 25, ../sass/index.scss */
+#article-slide .slide.mask .list .item .content .description {
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+  text-indent: 2em;
+}
+/* line 35, ../sass/index.scss */
+#article-slide .arrow {
+  background-image: url(../imgs/arrow.png);
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  top: 125px;
+  opacity: 0.3;
+  transition: all linear .3s;
+  cursor: pointer;
+}
+/* line 45, ../sass/index.scss */
+#article-slide .previous {
+  left: 20px;
+}
+/* line 48, ../sass/index.scss */
+#article-slide .next {
+  background-position: 50px;
+  right: 20px;
+}
+/* line 52, ../sass/index.scss */
+#article-slide .next:hover, #article-slide .previous:hover {
+  opacity: 1;
+}
+
+/* WALL */
+/* line 57, ../sass/index.scss */
+#wall {
+  margin: 0px auto;
+  margin-top: 40px;
+}
+
+/* line 61, ../sass/index.scss */
+#wall .group {
+  width: 240px;
+  float: left;
+  margin-left: 1px;
+}
+
+/* line 67, ../sass/index.scss */
+#wall .group3:last-child {
+  width: 100px;
+}
+
+/* line 70, ../sass/index.scss */
+#wall .group0 {
+  width: 360px;
+}
+
+/* line 73, ../sass/index.scss */
+#wall .group1 .lg {
+  clear: both;
+}
+
+/* line 76, ../sass/index.scss */
+#wall .group2 .lg:first-child {
+  float: none;
+}
+
+/* line 79, ../sass/index.scss */
+#wall .group3 {
+  width: 120px;
+}
+
+/* line 82, ../sass/index.scss */
+#wall .group:after, #wall:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+/* line 88, ../sass/index.scss */
+#wall .picture {
+  position: relative;
+  background-size: 100%;
+}
+/* line 91, ../sass/index.scss */
+#wall .picture .name {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 40px;
+  text-shadow: 1px 1px 3px #000;
+  text-align: right;
+  right: 0px;
+  color: #FFF;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  padding: 10px;
+  transition: opacity .5s linear;
+}
+/* line 106, ../sass/index.scss */
+#wall .picture:hover .name {
+  opacity: 1;
+}
+
+/* line 112, ../sass/index.scss */
+#wall .picture .mask {
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  transition: opacity linear .3s;
+}
+
+/* line 122, ../sass/index.scss */
+#wall .picture:hover .mask {
+  opacity: 0;
+}
+
+/* line 126, ../sass/index.scss */
+#wall .picture.lg {
+  width: 230px;
+  height: 230px;
+  background-color: #FFF;
+  float: left;
+  margin: 10px 10px 0px 0px;
+}
+
+/* line 133, ../sass/index.scss */
+#wall .picture.sm {
+  width: 110px;
+  height: 110px;
+  background-color: #FFF;
+  float: left;
+  margin: 10px 10px 0px 0px;
+}
+
+/* MARKET */
+/* line 141, ../sass/index.scss */
+#market {
+  width: 990px;
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-left: -15px;
+}
+
+/* line 148, ../sass/index.scss */
+#market .item {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 5px #CCC;
+  margin: 14px;
+  float: left;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 157, ../sass/index.scss */
+#market .item0 {
+  background-image: url(../imgs/gdimage_0.jpeg);
+}
+
+/* line 158, ../sass/index.scss */
+#market .item1 {
+  background-image: url(../imgs/gdimage_1.jpeg);
+}
+
+/* line 159, ../sass/index.scss */
+#market .item2 {
+  background-image: url(../imgs/gdimage_2.jpeg);
+}
+
+/* line 160, ../sass/index.scss */
+#market .item3 {
+  background-image: url(../imgs/gdimage_3.jpeg);
+}
+
+/* line 161, ../sass/index.scss */
+#market .item4 {
+  background-image: url(../imgs/gdimage_4.jpeg);
+}
+
+/* line 162, ../sass/index.scss */
+#market .item5 {
+  background-image: url(../imgs/gdimage_5.jpeg);
+}
+
+/* line 163, ../sass/index.scss */
+#market:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 168, ../sass/index.scss */
+#market .item .title {
+  position: absolute;
+  height: 30px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  padding: 0px 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 178, ../sass/index.scss */
+#market h1, #wall h1 {
+  color: #494949;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* line 184, ../sass/index.scss */
+#market h1 {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 191, ../sass/index.scss */
+  #slide {
+    width: 100%;
+  }
+  /* line 193, ../sass/index.scss */
+  #slide .list {
+    width: 100%;
+    height: 320px !important;
+  }
+  /* line 196, ../sass/index.scss */
+  #slide .list .item {
+    width: 100% !important;
+    height: 320px !important;
+  }
+
+  /* line 203, ../sass/index.scss */
+  #wall {
+    display: none;
+  }
+
+  /* line 206, ../sass/index.scss */
+  #market {
+    display: none;
+  }
+}

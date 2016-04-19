@@ -1,0 +1,104 @@
+/* line 1, ../../sass/user/simulator.scss */
+.left {
+  width: 240px;
+  float: left;
+}
+/* line 4, ../../sass/user/simulator.scss */
+.left h2 {
+  border-bottom: 1px #C0C0C0 solid;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+/* line 10, ../../sass/user/simulator.scss */
+.left .row {
+  margin: 0px;
+}
+/* line 13, ../../sass/user/simulator.scss */
+.left .semester {
+  margin: 5px 20px;
+  display: inline-block;
+  position: relative;
+}
+/* line 17, ../../sass/user/simulator.scss */
+.left .semester.selected:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #8fa2cf;
+  color: #F7F7F7;
+}
+/* line 28, ../../sass/user/simulator.scss */
+.left .semester.selected:after a:hover {
+  color: #FFF;
+}
+/* line 33, ../../sass/user/simulator.scss */
+.left .question {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 37, ../../sass/user/simulator.scss */
+.left .question .answer {
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(55, 55, 55, 0.7);
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  top: 0px;
+  width: 210px;
+}
+/* line 50, ../../sass/user/simulator.scss */
+.left .question:hover .answer {
+  display: block;
+}
+/* line 55, ../../sass/user/simulator.scss */
+.left input[type='text'], .left select {
+  width: 200px;
+}
+/* line 58, ../../sass/user/simulator.scss */
+.left .courses {
+  height: 500px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+/* line 64, ../../sass/user/simulator.scss */
+.left .courses .course {
+  margin: 5px 0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid #AAA;
+  font-size: 12px;
+}
+/* line 69, ../../sass/user/simulator.scss */
+.left .courses .course .name {
+  font-size: 15px;
+}
+/* line 72, ../../sass/user/simulator.scss */
+.left .courses .course .course_id {
+  font-size: 10px;
+  margin-left: 5px;
+}
+/* line 76, ../../sass/user/simulator.scss */
+.left .courses .course .add {
+  border: none;
+  background-color: #8FA2CF;
+  color: #FFF;
+  padding: 1px 3px;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+/* line 87, ../../sass/user/simulator.scss */
+.right {
+  float: right;
+}

@@ -1,0 +1,49 @@
+/* line 1, ../../sass/article/read.scss */
+h2 {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+/* line 5, ../../sass/article/read.scss */
+.subtitle {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+/* line 13, ../../sass/article/read.scss */
+#article-read:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 19, ../../sass/article/read.scss */
+.left {
+  width: 680px;
+  float: left;
+  padding: 20px;
+}
+
+/* line 24, ../../sass/article/read.scss */
+.right {
+  width: 260px;
+  float: left;
+  padding-top: 40px;
+}
+
+/* line 30, ../../sass/article/read.scss */
+.fb-comments {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 36, ../../sass/article/read.scss */
+  .left {
+    width: 100%;
+  }
+
+  /* line 39, ../../sass/article/read.scss */
+  .right {
+    display: none;
+  }
+}

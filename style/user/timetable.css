@@ -1,0 +1,337 @@
+﻿@charset "UTF-8";
+/* line 2, ../../sass/user/timetable.scss */
+#timetable {
+  width: 700px;
+}
+/* line 4, ../../sass/user/timetable.scss */
+#timetable h2 {
+  margin: 20px 0px;
+  width: 600px;
+  float: left;
+}
+/* line 9, ../../sass/user/timetable.scss */
+#timetable .recrawler {
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  width: 80px;
+  float: right;
+  border: 1px solid #AAA;
+  background-color: #EEE;
+  border-radius: 5px;
+  color: #999;
+}
+/* line 22, ../../sass/user/timetable.scss */
+#timetable table {
+  width: 700px;
+  background-color: #F9F9F9;
+  table-layout: fixed;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+/* line 29, ../../sass/user/timetable.scss */
+#timetable table .course, #timetable table th, #timetable table td {
+  text-align: center;
+  transition: color .2s linear;
+}
+/* line 33, ../../sass/user/timetable.scss */
+#timetable table th, #timetable table td {
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 5px;
+  position: relative;
+}
+/* line 39, ../../sass/user/timetable.scss */
+#timetable table td {
+  width: 100px;
+  height: 85px;
+}
+/* line 42, ../../sass/user/timetable.scss */
+#timetable table td .teacher, #timetable table td .place, #timetable table td .name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 47, ../../sass/user/timetable.scss */
+#timetable table td .teacher, #timetable table td .place {
+  font-size: 11px;
+}
+/* line 51, ../../sass/user/timetable.scss */
+#timetable table th {
+  padding: 10px;
+}
+/* line 54, ../../sass/user/timetable.scss */
+#timetable table .course {
+  padding: 10px;
+  opacity: 1;
+  /* box-shadow: 0px 0px 10px #AAA; */
+  cursor: pointer;
+  color: #666;
+  position: relative;
+}
+/* line 61, ../../sass/user/timetable.scss */
+#timetable table .course .delete {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  outline: none;
+}
+/* line 70, ../../sass/user/timetable.scss */
+#timetable table .course:hover {
+  color: #000;
+}
+/* line 75, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(even) td, #timetable table tr:nth-child(even) th {
+  background-color: #F0F0F0;
+}
+/* line 79, ../../sass/user/timetable.scss */
+#timetable table tr td:first-child:after {
+  content: "1";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #FFF;
+  border: 1px solid #E5E5E5;
+  color: #666;
+  border-radius: 20px;
+}
+/* line 93, ../../sass/user/timetable.scss */
+#timetable table tr td:last-child:after {
+  content: "8:10";
+  display: block;
+  position: absolute;
+  right: 300px;
+  top: -10px;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 20px;
+  color: #999;
+  z-index: 1;
+}
+/* line 106, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(even) td:first-child:after {
+  background-color: #F0F0F0;
+}
+/* line 109, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(2) td:last-child:after {
+  content: "8:10";
+}
+/* line 110, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(3) td:last-child:after {
+  content: "9:10";
+}
+/* line 111, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(4) td:last-child:after {
+  content: "10:10";
+}
+/* line 112, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(5) td:last-child:after {
+  content: "11:10";
+}
+/* line 113, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(6) td:last-child:after {
+  content: "13:10";
+}
+/* line 114, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(7) td:last-child:after {
+  content: "14:10";
+}
+/* line 115, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(8) td:last-child:after {
+  content: "15:10";
+}
+/* line 116, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(9) td:last-child:after {
+  content: "16:10";
+}
+/* line 117, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(10) td:last-child:after {
+  content: "17:10";
+}
+/* line 118, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(11) td:last-child:after {
+  content: "18:30";
+}
+/* line 119, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(12) td:last-child:after {
+  content: "19:20";
+}
+/* line 120, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(13) td:last-child:after {
+  content: "20:20";
+}
+/* line 121, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(14) td:last-child:after {
+  content: "21:20";
+}
+/* line 122, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(15) td:last-child:after {
+  content: "";
+}
+/* line 124, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(2) td:first-child:after {
+  content: "1";
+}
+/* line 125, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(3) td:first-child:after {
+  content: "2";
+}
+/* line 126, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(4) td:first-child:after {
+  content: "3";
+}
+/* line 127, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(5) td:first-child:after {
+  content: "4";
+}
+/* line 128, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(6) td:first-child:after {
+  content: "5";
+}
+/* line 129, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(7) td:first-child:after {
+  content: "6";
+}
+/* line 130, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(8) td:first-child:after {
+  content: "7";
+}
+/* line 131, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(9) td:first-child:after {
+  content: "8";
+}
+/* line 132, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(10) td:first-child:after {
+  content: "9";
+}
+/* line 133, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(11) td:first-child:after {
+  content: "A";
+}
+/* line 134, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(12) td:first-child:after {
+  content: "B";
+}
+/* line 135, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(13) td:first-child:after {
+  content: "C";
+}
+/* line 136, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(14) td:first-child:after {
+  content: "D";
+}
+/* line 137, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(15) td:first-child:after {
+  content: "其他";
+  width: 40px;
+  height: 24px;
+}
+/* line 138, ../../sass/user/timetable.scss */
+#timetable table tr:nth-child(15) .course {
+  width: 90px;
+  height: 75px;
+  border: 1px solid #EEE;
+}
+/* line 143, ../../sass/user/timetable.scss */
+#timetable table .course.template {
+  background-color: #8fcfbc;
+}
+/* line 146, ../../sass/user/timetable.scss */
+#timetable table .course.template.conflict {
+  position: absolute !important;
+  left: 5px;
+  top: 5px;
+  width: 85px;
+  background-color: #ff8f8f;
+}
+
+/* line 158, ../../sass/user/timetable.scss */
+#course-detail {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 167, ../../sass/user/timetable.scss */
+#course-detail h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* line 171, ../../sass/user/timetable.scss */
+#course-detail h3 {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* line 175, ../../sass/user/timetable.scss */
+#course-detail .wrap {
+  width: 800px;
+  margin: 5% auto;
+  height: 80%;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #999;
+}
+
+/* line 183, ../../sass/user/timetable.scss */
+#course-detail .wrap .row {
+  margin: 3px 0px;
+  padding: 3px 0px;
+}
+
+/* line 187, ../../sass/user/timetable.scss */
+.row.description {
+  /* border-bottom: 1px solid #CCC; */
+  text-indent: 25px;
+  text-align: left;
+  display: block;
+}
+
+#course-detail .student img {
+    border-radius: 100px;
+    width: 60px;
+}
+#course-detail .student {
+    width: 60px;
+    float: left;
+    margin: 3px;
+    height: 100px;
+    overflow: hidden;
+}
+#course-detail .student .name {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 650px) {
+  /* line 196, ../../sass/user/timetable.scss */
+  #course-detail .wrap {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: scroll;
+  }
+}
+
+#timetable table td .course {
+    padding: 3px;
+  
+    height: 46px;
+}
+

@@ -1,0 +1,118 @@
+/* line 6, ../../sass/market/message.scss */
+#message .msg-box {
+  margin-top: 10px;
+}
+/* line 8, ../../sass/market/message.scss */
+#message .msg-box .reply {
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 10px 0;
+}
+/* line 11, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-person {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 14, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-person .reply-pic {
+  width: 50px;
+  height: 50px;
+}
+/* line 21, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-msg {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+/* line 26, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-button {
+  padding: 4px 30px;
+  color: white;
+  background: gray;
+  border-radius: 3px;
+  transition: background .1s linear;
+}
+/* line 32, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-button:hover {
+  background: #616161;
+}
+/* line 36, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-text {
+  padding: 10px;
+  margin: 0;
+  width: 50%;
+  float: left;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+/* line 45, ../../sass/market/message.scss */
+#message .msg-box .reply .reply-submit {
+  float: left;
+  display: block;
+  width: auto;
+  padding: 0 20px;
+  margin: 0;
+  margin-left: -1px;
+  background: gray;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+/* line 59, ../../sass/market/message.scss */
+#message .person {
+  float: left;
+  width: 100px;
+}
+/* line 62, ../../sass/market/message.scss */
+#message .person .picture {
+  display: block;
+  border-radius: 999px;
+  width: 100%;
+  height: 100px;
+}
+/* line 68, ../../sass/market/message.scss */
+#message .person .name {
+  margin: 10px 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 75, ../../sass/market/message.scss */
+#message .person .date {
+  text-align: center;
+  color: #888;
+  transition: color .3s linear;
+}
+/* line 79, ../../sass/market/message.scss */
+#message .person .date:hover {
+  color: black;
+}
+/* line 84, ../../sass/market/message.scss */
+#message .msg {
+  position: relative;
+  float: left;
+  min-height: 180px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin-left: 25px;
+  padding: 15px;
+  width: 835px;
+  background: #f0f0f0;
+}
+/* line 94, ../../sass/market/message.scss */
+#message .msg:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-right: none;
+  width: 20px;
+  height: 20px;
+  background: #f0f0f0;
+}

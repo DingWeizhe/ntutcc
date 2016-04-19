@@ -1,0 +1,17 @@
+/* line 1, ../sass/error.scss */
+.error {
+  margin: 30px auto;
+  width: 720px;
+  height: 520px;
+  padding: 60px;
+  background: right bottom url("/imgs/error.png") no-repeat;
+}
+/* line 7, ../sass/error.scss */
+.error h3 {
+  font-size: 32px;
+}
+/* line 11, ../sass/error.scss */
+.error .content {
+  font-size: 14px;
+  padding: 20px 0px;
+}

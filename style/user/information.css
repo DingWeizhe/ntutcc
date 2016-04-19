@@ -1,0 +1,46 @@
+/* line 1, ../../sass/user/information.scss */
+#user-information {
+  text-align: center;
+}
+/* line 2, ../../sass/user/information.scss */
+#user-information .picture {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  margin: 20px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* line 10, ../../sass/user/information.scss */
+#user-information .name {
+  font-size: 20px;
+  line-height: 32px;
+}
+/* line 14, ../../sass/user/information.scss */
+#user-information .club {
+  margin: 3px;
+}
+/* line 17, ../../sass/user/information.scss */
+#user-information .major {
+  margin: 3px;
+}
+/* line 20, ../../sass/user/information.scss */
+#user-information .status {
+  margin-top: 10px;
+}
+/* line 23, ../../sass/user/information.scss */
+#user-information .facebook span {
+  display: none;
+}
+/* line 26, ../../sass/user/information.scss */
+#user-information .facebook:after {
+  content: "F";
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #5976B8;
+  border-radius: 12px;
+  color: #FFF;
+}

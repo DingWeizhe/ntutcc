@@ -1,0 +1,216 @@
+/* line 3, ../../sass/user/read.scss */
+.right {
+  float: right;
+}
+
+/* line 6, ../../sass/user/read.scss */
+.clr {
+  clear: both;
+}
+
+/* line 10, ../../sass/user/read.scss */
+#read h2 {
+  margin: 20px 0px;
+}
+/* line 13, ../../sass/user/read.scss */
+#read .left {
+  width: 240px;
+  float: left;
+}
+/* line 17, ../../sass/user/read.scss */
+#read .left h2 {
+  border-bottom: 1px silver solid;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+/* line 23, ../../sass/user/read.scss */
+#read .left .counter {
+  font-size: 24px;
+  text-align: right;
+}
+/* line 26, ../../sass/user/read.scss */
+#read .left .counter span {
+  font-size: 70px;
+  color: #333366;
+}
+/* line 33, ../../sass/user/read.scss */
+#read .left .courses .item {
+  padding: 10px;
+  margin: 5px 0px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 38, ../../sass/user/read.scss */
+#read .left .courses .item h3 {
+  font-size: 18px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+/* line 43, ../../sass/user/read.scss */
+#read .left .courses .item .detail {
+  font-size: 10px;
+  color: #999;
+}
+/* line 47, ../../sass/user/read.scss */
+#read .left .courses .item.selected:after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  left: -5px;
+  content: "";
+  background-color: #8fa2cf;
+  border-radius: 10px;
+  color: #FFF;
+}
+/* line 62, ../../sass/user/read.scss */
+#read .left .market .item {
+  width: 80px;
+  height: 110px;
+  float: left;
+  text-align: center;
+  font-size: 10px;
+}
+/* line 68, ../../sass/user/read.scss */
+#read .left .market .item .mark {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  margin: 10px;
+  position: relative;
+}
+/* line 76, ../../sass/user/read.scss */
+#read .left .market .item .mark img {
+  width: 80px;
+  height: 80px;
+  transition: all .3s ease-in-out;
+  margin: -10px;
+}
+/* line 82, ../../sass/user/read.scss */
+#read .left .market .item .mark:hover {
+  width: 80px;
+  height: 80px;
+  margin: 0px;
+}
+/* line 86, ../../sass/user/read.scss */
+#read .left .market .item .mark:hover img {
+  margin: 0px;
+}
+/* line 89, ../../sass/user/read.scss */
+#read .left .market .item .mark:hover:after {
+  background-color: transparent;
+}
+/* line 93, ../../sass/user/read.scss */
+#read .left .market .item .mark:after {
+  content: "";
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  transition: all .3s ease-in-out;
+}
+/* line 107, ../../sass/user/read.scss */
+#read .left .market h3 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 116, ../../sass/user/read.scss */
+  #read .left {
+    float: none;
+    width: 100%;
+  }
+  /* line 120, ../../sass/user/read.scss */
+  #read .left .courses {
+    margin-top: 20px;
+  }
+  /* line 122, ../../sass/user/read.scss */
+  #read .left .courses h2 {
+    display: none;
+  }
+  /* line 125, ../../sass/user/read.scss */
+  #read .left .courses .item {
+    padding: 0px;
+    margin: 0px 0px;
+    margin-right: 10px;
+    float: left;
+  }
+  /* line 130, ../../sass/user/read.scss */
+  #read .left .courses .item h3 {
+    font-size: 10px;
+    margin: 3px;
+  }
+  /* line 134, ../../sass/user/read.scss */
+  #read .left .courses .item .detail {
+    display: none;
+  }
+  /* line 138, ../../sass/user/read.scss */
+  #read .left .courses .item.selected h3 {
+    color: #428bca;
+  }
+  /* line 141, ../../sass/user/read.scss */
+  #read .left .courses .item.selected:after {
+    display: none;
+  }
+  /* line 148, ../../sass/user/read.scss */
+  #read .right {
+    width: 100%;
+  }
+  /* line 151, ../../sass/user/read.scss */
+  #read #timetable {
+    width: 100%;
+  }
+  /* line 153, ../../sass/user/read.scss */
+  #read #timetable h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+    width: 60%;
+  }
+  /* line 159, ../../sass/user/read.scss */
+  #read #timetable .recrawler {
+    margin-top: 0px;
+  }
+  /* line 162, ../../sass/user/read.scss */
+  #read #timetable table {
+    width: 100%;
+  }
+  /* line 164, ../../sass/user/read.scss */
+  #read #timetable table td {
+    width: auto;
+    height: 0px;
+    padding: 0px;
+  }
+  /* line 168, ../../sass/user/read.scss */
+  #read #timetable table td .course {
+    padding: 3px;
+  }
+  /* line 170, ../../sass/user/read.scss */
+  #read #timetable table td .course .teacher {
+    display: none;
+  }
+  /* line 174, ../../sass/user/read.scss */
+  #read #timetable table td:first-child:after {
+    display: none;
+  }
+  /* line 177, ../../sass/user/read.scss */
+  #read #timetable table td:last-child:after {
+    display: none;
+  }
+
+  /* line 184, ../../sass/user/read.scss */
+  #wall {
+    display: none;
+  }
+
+  /* line 187, ../../sass/user/read.scss */
+  #market {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>上傳圖片</title>
+	<script>
+		var upload_image = {
+			timeout : 0,
+			uploading : function(){
+				document.getElementById("upload_image").submit();
+				document.getElementById('status').innerHTML = "圖片上傳中請稍候...";
+				document.getElementById('uploader').style.display = "none";
+				this.timeout = window.setTimeout(this.uploadFail, 20000);
+			},
+			fail : function(){
+				document.getElementById('status').innerHTML = "圖片上傳失敗";
+			},
+			complete : function( result ){
+				console.log(result);
+				document.getElementById('status').innerHTML = "圖片上傳完成";
+				window.clearTimeout( this.timeout );
+				var w = (!window.frameElement && window.dialogArguments) || opener || parent || top;
+				tinymce = w.tinymce;
+				tinymce.EditorManager.activeEditor.insertContent('<img src="/imgs/upload/' + result.file +'">');
+				tinymce.EditorManager.activeEditor.windowManager.close(window);
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<form id="upload_image" action="/image/upload" method="post" enctype="multipart/form-data" target="upload_target">
+		<div id="status" ></div>
+		<input name="callback" value="upload_image.complete" type="hidden"/>
+		<input id="uploader" name="file" type="file" onChange="upload_image.uploading();" accept="image/*">
+	</form>
+
+	<iframe id="upload_target" style="display:none;" name="upload_target" src=""></iframe>
+
+</body>
+</html>

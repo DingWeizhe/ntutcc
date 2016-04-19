@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js"></script>
+    <script src="./a.js"></script>
+	<meta charset="UTF-8"/>
+	<style type="text/css">
+		.box{
+			height:300px;
+			width:200px;
+			border: 1px solid #000;
+			margin: 0px auto;
+			font-size:0;
+			display: inline-block;
+			text-align: center;
+			position: relative;
+		}
+		.box:before{
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 0;
+			height: 100%;
+		}
+		.text{
+			display: inline-block;
+			font-size:16px;
+			vertical-align: middle;
+			text-align: center;
+			padding: 8px;
+		}
+		.info{
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			z-index: 1;
+			font-size: 14px;
+			padding: 4px 8px;
+			border: 1px solid #000;
+			color: #FFF;
+			background: #000;
+		}
+		.sf{
+			font-size: 10px;
+		}
+		.name{
+			font-size: 18px;
+			margin: 8px;
+		}
+		.desc{
+			font-size: 12px;
+		}
+		.time{
+			font-size: 12px;
+			border: 1px solid #000;
+			display: inline-block;
+			margin: 10px;
+			padding: 4px;
+		}
+		small{
+			font-size: 8px;
+		}
+	</style>
+  </head>
+  <body ng-controller="TodoListController as vm">
+    <div class='box' ng-repeat="(key, value) in vm.list track by $index">
+    	<div class="info">機會</div>
+    	<div class="text">
+    		<div class="name" ng-bind-html="value[0]"></div>
+    		<div class="desc" ng-bind-html="value[1]"></div>
+    		<div class="time" ng-bind-html="value[2]"></div>
+    	</div>
+    </div>
+    <br>
+    <div class='box' ng-repeat="(key, value) in vm.list2 track by $index">
+    	<div class="info">命運</div>
+    	<div class="text" ng-bind-html="value">
+    	</div>
+    </div>
+  </body>
+</html>

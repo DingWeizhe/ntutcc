@@ -1,0 +1,20 @@
+/* line 1, ../../sass/user/authenticate.scss */
+.authenticate {
+  width: 600px;
+  margin: 100px auto;
+}
+/* line 4, ../../sass/user/authenticate.scss */
+.authenticate .submit {
+  border: 0px;
+  background-color: #5f9c2a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #FFF;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+/* line 14, ../../sass/user/authenticate.scss */
+.center {
+  text-align: center;
+}

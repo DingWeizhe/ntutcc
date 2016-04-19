@@ -1,0 +1,414 @@
+/* line 1, ../../sass/layout/default.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, ../../sass/layout/default.scss */
+body {
+  background-image: url(/imgs/tiles.png);
+  overflow: scroll;
+}
+
+/* line 11, ../../sass/layout/default.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* line 16, ../../sass/layout/default.scss */
+a:hover {
+  color: #409ac3;
+}
+
+/* line 20, ../../sass/layout/default.scss */
+#header {
+  max-width: 960px;
+  margin: 0px auto;
+  margin-top: 30px;
+  position: relative;
+}
+/* line 25, ../../sass/layout/default.scss */
+#header .logo {
+  float: left;
+  height: 80px;
+  color: #434343;
+}
+/* line 30, ../../sass/layout/default.scss */
+#header h1 {
+  font-size: 48px;
+  margin: 0px;
+}
+/* line 34, ../../sass/layout/default.scss */
+#header h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+}
+/* line 39, ../../sass/layout/default.scss */
+#header .search {
+  float: right;
+  padding-top: 35px;
+}
+/* line 42, ../../sass/layout/default.scss */
+#header .search input {
+  width: 200px;
+  padding: 10px;
+  display: block;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px #CACACA;
+  -webkit-appearance: none;
+  outline: none;
+}
+/* line 51, ../../sass/layout/default.scss */
+#header .search input:focus {
+  box-shadow: inset 0px 0px 5px rgba(82, 168, 236, 0.6);
+}
+/* line 56, ../../sass/layout/default.scss */
+#header #user {
+  float: right;
+  padding-top: 35px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+/* line 61, ../../sass/layout/default.scss */
+#header #user .user {
+  float: left;
+  padding: 0px 10px;
+  margin-top: 5px;
+  border-left: 1px solid #979797;
+  color: #666;
+}
+/* line 67, ../../sass/layout/default.scss */
+#header #user .user:first-child {
+  border: none;
+}
+/* line 71, ../../sass/layout/default.scss */
+#header #user:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+/* line 76, ../../sass/layout/default.scss */
+#header #user .fb-login {
+  background-color: #47639E;
+  border-radius: 3px;
+  padding: 6px 10px;
+  color: #EEE;
+}
+/* line 81, ../../sass/layout/default.scss */
+#header #user .fb-login a:hover {
+  color: #FFF;
+}
+/* line 86, ../../sass/layout/default.scss */
+#header:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+/* NAVIGATION */
+/* line 95, ../../sass/layout/default.scss */
+#navigation {
+  max-width: 960px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #797979;
+  border-width: 2px 0px;
+  font-size: 18px;
+}
+/* line 102, ../../sass/layout/default.scss */
+#navigation ul {
+  margin: 0px;
+}
+/* line 105, ../../sass/layout/default.scss */
+#navigation li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+  width: 16%;
+  text-align: center;
+}
+/* line 111, ../../sass/layout/default.scss */
+#navigation li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 114, ../../sass/layout/default.scss */
+#navigation li:hover ul {
+  display: block;
+}
+/* line 117, ../../sass/layout/default.scss */
+#navigation li ul {
+  position: absolute;
+  z-index: 3;
+  width: 154px;
+  display: none;
+  margin-left: -10px;
+  padding: 13px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0px 0px 5px 5px;
+}
+/* line 126, ../../sass/layout/default.scss */
+#navigation li ul li {
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+}
+/* line 130, ../../sass/layout/default.scss */
+#navigation li ul li:hover {
+  background-color: rgba(97, 137, 211, 0.7);
+}
+/* line 136, ../../sass/layout/default.scss */
+#navigation ul:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+/* FOOTER */
+/* line 144, ../../sass/layout/default.scss */
+#footer {
+  padding: 10px;
+  color: #343434;
+  width: 960px;
+  margin: 0px auto;
+  text-align: right;
+}
+
+/* line 152, ../../sass/layout/default.scss */
+#content {
+  width: 960px;
+  margin: 10px auto;
+}
+
+/* line 157, ../../sass/layout/default.scss */
+#message-box {
+  width: 300px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #FFF;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+/* line 167, ../../sass/layout/default.scss */
+#light-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: table;
+  z-index: 99;
+}
+
+/* line 178, ../../sass/layout/default.scss */
+#light-box .wrap {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 184, ../../sass/layout/default.scss */
+.clr {
+  clear: both;
+}
+
+/* line 190, ../../sass/layout/default.scss */
+input, select {
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin: 10px;
+  width: 160px;
+}
+/* line 198, ../../sass/layout/default.scss */
+input.submit, select.submit {
+  background-color: #4E777E;
+  color: #FFF;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 203, ../../sass/layout/default.scss */
+input.submit:hover, select.submit:hover {
+  background-color: #7CA7AD;
+}
+/* line 207, ../../sass/layout/default.scss */
+input[type='text'], select[type='text'] {
+  padding: 0px 5px;
+  width: 150px;
+  color: #232;
+}
+
+/* line 214, ../../sass/layout/default.scss */
+select {
+  width: 150px;
+  padding: 5px;
+}
+
+/* line 219, ../../sass/layout/default.scss */
+input[type='radio'] {
+  line-height: 32px;
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+  border: 1px solid #CBC;
+  border-radius: 16px;
+  outline: none;
+  margin: 0px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-color: #EEE;
+}
+/* line 231, ../../sass/layout/default.scss */
+input[type='radio']:checked:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #4E777E;
+}
+/* line 240, ../../sass/layout/default.scss */
+input[type='radio']:focus {
+  outline: none;
+}
+
+/* line 245, ../../sass/layout/default.scss */
+label {
+  line-height: 32px;
+}
+
+/* line 249, ../../sass/layout/default.scss */
+.hit {
+  position: relative;
+}
+/* line 251, ../../sass/layout/default.scss */
+.hit:after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  display: block;
+  background: #ff4c42 url(/imgs/test.png) no-repeat center center;
+  background-size: 4px auto;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 266, ../../sass/layout/default.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 269, ../../sass/layout/default.scss */
+  .phone-remover {
+    display: none;
+  }
+
+  /* line 272, ../../sass/layout/default.scss */
+  #header {
+    margin: 5px;
+  }
+  /* line 274, ../../sass/layout/default.scss */
+  #header .logo {
+    padding: 5px;
+    height: 20px;
+  }
+  /* line 277, ../../sass/layout/default.scss */
+  #header .logo h1 {
+    font-size: 21px;
+  }
+  /* line 280, ../../sass/layout/default.scss */
+  #header .logo h2 {
+    display: none;
+  }
+  /* line 284, ../../sass/layout/default.scss */
+  #header #user {
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: right;
+  }
+  /* line 289, ../../sass/layout/default.scss */
+  #header .search {
+    padding: 5px;
+    width: 100%;
+  }
+  /* line 292, ../../sass/layout/default.scss */
+  #header .search input {
+    margin: 0px;
+    width: 100%;
+  }
+
+  /* line 298, ../../sass/layout/default.scss */
+  #navigation {
+    margin-top: 0px;
+  }
+  /* line 300, ../../sass/layout/default.scss */
+  #navigation li {
+    width: 20%;
+    padding: 3px;
+    font-size: 12px;
+  }
+  /* line 304, ../../sass/layout/default.scss */
+  #navigation li ul {
+    width: 20%;
+    margin: 0px;
+  }
+  /* line 307, ../../sass/layout/default.scss */
+  #navigation li ul li {
+    font-size: 12px;
+  }
+
+  /* line 313, ../../sass/layout/default.scss */
+  #content {
+    width: 100%;
+  }
+
+  /* line 316, ../../sass/layout/default.scss */
+  #footer {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+/* line 322, ../../sass/layout/default.scss */
+#notification {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-left: -400px;
+  margin-top: -40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 800px;
+  height: 120px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+}
+/* line 334, ../../sass/layout/default.scss */
+#notification h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+  line-height: 80px;
+}
+/* line 340, ../../sass/layout/default.scss */
+#notification p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: -10px;
+}

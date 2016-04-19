@@ -1,0 +1,61 @@
+/* line 1, ../../sass/article/post.scss */
+.row {
+  margin: 0px;
+}
+
+/* line 4, ../../sass/article/post.scss */
+input[name='title'] {
+  width: 480px;
+}
+
+/* line 7, ../../sass/article/post.scss */
+input[name='date'] {
+  width: 85px;
+}
+
+/* line 8, ../../sass/article/post.scss */
+input[name='time'] {
+  width: 85px;
+  margin-left: 0px;
+}
+
+/* line 9, ../../sass/article/post.scss */
+textarea[name='content'] {
+  height: 600px;
+}
+
+/* line 12, ../../sass/article/post.scss */
+.tag {
+  font-size: 10px;
+  color: #666;
+}
+
+/* line 16, ../../sass/article/post.scss */
+input[name='submit'] {
+  background-color: #457020;
+  color: #FFF;
+  transition: background-color .5s linear;
+  margin: 20px 0px;
+}
+/* line 21, ../../sass/article/post.scss */
+input[name='submit']:hover {
+  background-color: #629930;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 27, ../../sass/article/post.scss */
+  label[for='title'] {
+    display: none;
+  }
+
+  /* line 30, ../../sass/article/post.scss */
+  input[name='title'] {
+    width: 100%;
+    margin: 0px;
+  }
+
+  /* line 34, ../../sass/article/post.scss */
+  .tag {
+    display: block;
+  }
+}
