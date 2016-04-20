@@ -74,7 +74,7 @@
 		<div id="footer">
 
 			<div>
-			© 2014 by D.Weizhe & 今天的風兒有點喧囂, 創意發想 by NTUST.cc
+			© 2014 by D.Weizhe & kw-今天的風兒有點喧囂, 創意發想 by NTUST.cc
 			</div>
 		</div>
 		<?php if (isset($message)){ ?>
